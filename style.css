@@ -1,0 +1,772 @@
+/* Overall */
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: "smooth";
+  font-family: 'Poppins', sans-serif;
+}
+
+.container__center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.color__yellow {
+  color: #FF9F1C;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 200;
+}
+
+/* End overall */
+
+/* Menu */
+#sidebar {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background: #000;
+  opacity: .9;
+  left: -300px;
+  transition: .4s;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#sidebar ul li {
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 24px;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  top: 30px;
+  left: 330px;
+}
+
+.toggle-btn span {
+  width: 45px;
+  height: 4px;
+  background: #FF9F1C;
+  display: block;
+  margin-top: 4px;
+}
+/* End Menu */
+
+/* Phone */
+@media only screen and (max-width: 600px) {
+
+    .container {
+      width: 100%;
+      max-width: 330px;
+      margin: auto;
+    }
+
+  /* Landings page */
+    .container__header {
+      background-color: #FF9F1C;
+      height: 75px;
+      width: 125px;
+    }
+
+    .container__logo {
+      margin-top: 150px;
+      width: 70%;
+      height: 70%;
+    }
+
+    .container__button {
+      background-color: #FF9F1C;
+      width: 125px;
+      text-align: center;
+      padding: 10px 0px 10px 0px;
+      margin-top: 150px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .font-size-button {
+      font-size: 14px;
+    }
+  /* End Landingspage */
+
+  /* About */
+    .about {
+      margin-top: 150px;
+    }
+
+    .title__about {
+      margin-bottom: 30px;
+    }
+
+    .pepijn-image {
+      margin-top: 100px;
+      width: 100%;
+    }
+
+    .square {
+      margin-top: -200px;
+      float: right;
+      background-color: #FF9F1C;
+      height: 240px;
+      width: 180px;
+    }
+
+    .photo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 150px;
+    }
+  /* End About */
+
+  /* projecten */
+    .projects {
+      margin-bottom: 200px;
+    }
+
+    .cases {
+      font-size: 170px;
+      text-align: left;
+      margin-top: -105px;
+    }
+
+    /* Cases */
+    .title__project {
+      margin-top: 100px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .cases-imgs {
+      display: grid;
+      grid-template-areas:
+        "pic1 pic1 pic2 pic2 pic3 pic3"
+        "pic1 pic1 pic4 pic4 pic3 pic3"
+        "pic5 pic5 pic4 pic4 pic6 pic6"
+      grid-gap: 57px;
+      justify-items: center;
+      padding-bottom: 15em;
+    }
+    .case-pic1 {
+      grid-area: pic1;
+    }
+    .case-pic2 {
+      grid-area: pic2;
+    }
+    .case-pic3 {
+      grid-area: pic3;
+    }
+    .case-pic4 {
+      grid-area: pic4;
+    }
+    .case-pic5 {
+      grid-area: pic5;
+    }
+    .case-pic6 {
+      grid-area: pic6;
+    }
+
+    .img_cases {
+      width: 100%;
+    }
+
+    .div-case {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    /* End Cases */
+
+    /* Skills */
+    .skills {
+      margin-bottom: 200px;
+    }
+
+    .skills li{
+      list-style: none;
+      margin: 20px 0;
+      margin-bottom: 30px;
+    }
+
+    .bar {
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+    }
+
+    .bar span {
+      height: 2px;
+      float: left;
+      background: #FF9F1C;
+    }
+
+    .html {
+      width: 90%;
+      animation: html 3s;
+    }
+    .css {
+      width: 80%;
+      animation: css 3s;
+
+    }
+    .javascript {
+      width: 30%;
+      animation: javascript 3s;
+
+    }
+    .php {
+      width: 50%;
+      animation: php 3s;
+
+    }
+
+    @keyframes html {
+      0%{
+        width: 0%
+      }
+      100% {
+        width: 90%;
+      }
+    }
+
+    @keyframes css {
+      0%{
+        width: 0%
+      }
+      100% {
+        width: 80%;
+      }
+    }
+
+    @keyframes javascript {
+      0%{
+        width: 0%
+      }
+      100% {
+        width: 30%;
+      }
+    }
+
+    @keyframes php {
+      0%{
+        width: 0%
+      }
+      100% {
+        width: 50%;
+      }
+    }
+    /* Ens Skills */
+
+    /* Contact */
+
+    /* End Contact */
+  }
+/* End Phone */
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 660px;
+    margin: auto;
+  }
+
+/* Landings page */
+  .container__header {
+    background-color: #FF9F1C;
+    height: 75px;
+    width: 125px;
+  }
+
+  .container__logo {
+    margin-top: 150px;
+    width: 70%;
+    height: 70%;
+  }
+
+  .container__button {
+    background-color: #FF9F1C;
+    width: 125px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin-top: 150px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .font-size-button {
+    font-size: 14px;
+  }
+/* End Landingspage */
+
+/* About */
+  .about {
+    margin-top: 150px;
+  }
+
+  .title__about {
+    margin-bottom: 30px;
+  }
+
+  .pepijn-image {
+    margin-top: 100px;
+    width: 70%;
+  }
+
+  .square {
+    margin-top: -200px;
+    float: right;
+    background-color: #FF9F1C;
+    height: 240px;
+    width: 180px;
+  }
+
+  .photo {
+    margin-bottom: 150px;
+  }
+/* End About */
+
+/* projecten */
+  .projects {
+    margin-bottom: 200px;
+  }
+
+  .cases {
+    font-size: 170px;
+    text-align: left;
+    margin-top: -105px;
+  }
+
+  /* Cases */
+  .title__project {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .cases-imgs {
+    display: grid;
+    grid-template-areas:
+      "pic1 pic1 pic2 pic2 pic3 pic3"
+      "pic1 pic1 pic4 pic4 pic3 pic3"
+      "pic5 pic5 pic4 pic4 pic6 pic6"
+    grid-gap: 57px;
+    justify-items: center;
+    padding-bottom: 15em;
+  }
+  .case-pic1 {
+    grid-area: pic1;
+  }
+  .case-pic2 {
+    grid-area: pic2;
+  }
+  .case-pic3 {
+    grid-area: pic3;
+  }
+  .case-pic4 {
+    grid-area: pic4;
+  }
+  .case-pic5 {
+    grid-area: pic5;
+  }
+  .case-pic6 {
+    grid-area: pic6;
+  }
+
+  .img_cases {
+    width: 100%;
+  }
+
+  .div-case {
+    margin-bottom: 50px;
+  }
+  /* End Cases */
+
+  /* Skills */
+  .skills {
+    margin-bottom: 200px;
+  }
+
+  .skills li{
+    list-style: none;
+    margin: 20px 0;
+    margin-bottom: 30px;
+  }
+
+  .bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+  }
+
+  .bar span {
+    height: 2px;
+    float: left;
+    background: #FF9F1C;
+  }
+
+  .html {
+    width: 90%;
+    animation: html 3s;
+  }
+  .css {
+    width: 80%;
+    animation: css 3s;
+
+  }
+  .javascript {
+    width: 30%;
+    animation: javascript 3s;
+
+  }
+  .php {
+    width: 50%;
+    animation: php 3s;
+
+  }
+
+  @keyframes html {
+    0%{
+      width: 0%
+    }
+    100% {
+      width: 90%;
+    }
+  }
+
+  @keyframes css {
+    0%{
+      width: 0%
+    }
+    100% {
+      width: 80%;
+    }
+  }
+
+  @keyframes javascript {
+    0%{
+      width: 0%
+    }
+    100% {
+      width: 30%;
+    }
+  }
+
+  @keyframes php {
+    0%{
+      width: 0%
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  /* Ens Skills */
+
+  /* Contact */
+
+}
+
+/* End Tablet */
+
+/* Pc */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+/* Landings page */
+  #Landingspage {
+    margin-bottom: 300px;
+    background-image: url(images/dots.png);
+    background-repeat: no-repeat;
+    background-position: 140px 700px;
+  }
+
+  .font-size-title {
+    font-size: 32px;
+  }
+  .container__header {
+    background-color: #FF9F1C;
+    height: 75px;
+    width: 125px;
+  }
+
+  .container__logo {
+    margin-top: 250px;
+    width: 40%;
+    height: 40%;
+  }
+
+  .container__button {
+    background-color: #FF9F1C;
+    width: 125px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin-top: 250px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .font-size-button {
+    font-size: 14px;
+  }
+/* End Landingspage */
+
+/* About */
+  #about {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 200px;
+  }
+
+  .about {
+    margin-top: 150px;
+  }
+
+  .about p {
+    font-size: 24px;
+    width: 700px;
+  }
+
+  .title__about {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .pepijn-image {
+    margin-top: 100px;
+    width: 70%;
+    float: right;
+  }
+
+  .square {
+    margin-top: -200px;
+    float: right;
+    background-color: #FF9F1C;
+    height: 240px;
+    width: 180px;
+  }
+
+/* End About */
+
+/* projecten */
+  .projects {
+    margin-bottom: 200px;
+  }
+
+  .cases {
+    font-size: 170px;
+    text-align: left;
+    margin-top: -105px;
+  }
+
+  .informatie{
+    margin-left: 30px;
+  }
+
+  .informatie h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .informatie h4 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .informatie p {
+    font-size: 24px;
+  }
+
+  /* Cases */
+  .title__project {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .cases-imgs {
+    display: grid;
+    grid-template-areas:
+      "pic1 pic1 pic2 pic2 pic3 pic3"
+      "pic1 pic1 pic4 pic4 pic3 pic3"
+      "pic5 pic5 pic4 pic4 pic6 pic6"
+    grid-gap: 57px;
+    justify-items: center;
+    padding-bottom: 15em;
+  }
+  .case-pic1 {
+    grid-area: pic1;
+  }
+  .case-pic2 {
+    grid-area: pic2;
+  }
+  .case-pic3 {
+    grid-area: pic3;
+  }
+  .case-pic4 {
+    grid-area: pic4;
+  }
+  .case-pic5 {
+    grid-area: pic5;
+  }
+  .case-pic6 {
+    grid-area: pic6;
+  }
+
+  .img_cases {
+    width: 500px;
+  }
+
+  .div-case {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+  /* End Cases */
+
+  /* Skills */
+  #skills {
+    margin-top: 400px;
+    margin-bottom: 500px;
+  }
+  .skills {
+    margin-bottom: 200px;
+  }
+
+  .skills li{
+    list-style: none;
+    margin: 20px 0;
+    margin-bottom: 30px;
+  }
+
+  .bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+  }
+
+  .bar span {
+    height: 2px;
+    float: left;
+    background: #FF9F1C;
+  }
+
+  .html {
+    width: 90%;
+    animation: html 3s;
+  }
+  .css {
+    width: 80%;
+    animation: css 3s;
+
+  }
+  .javascript {
+    width: 30%;
+    animation: javascript 3s;
+
+  }
+  .php {
+    width: 50%;
+    animation: php 3s;
+
+  }
+
+  @keyframes html {
+    0%{
+      width: 0%
+    }
+    100% {
+      width: 90%;
+    }
+    }
+
+  @keyframes css {
+    0%{
+      width: 0%
+    }
+    100% {
+      width: 80%;
+    }
+    }
+
+  @keyframes javascript {
+    0%{
+      width: 0%
+    }
+    100% {
+      width: 30%;
+    }
+    }
+
+  @keyframes php {
+    0%{
+      width: 0%
+    }
+    100% {
+      width: 50%;
+    }
+    }
+
+  /* Ens Skills */
+    .contact {
+      background-color: #1B1D1E;
+      color: white;
+      height: 100px;
+    }
+
+    .contact-informatie {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 40px;
+    }
+
+    .contact-informatie p {
+      text-decoration: underline;
+    }
+
+    .platform {
+      margin-right: 20px;
+    }
+
+
+  /* Contact */
+
+}
+/* End Pc */
